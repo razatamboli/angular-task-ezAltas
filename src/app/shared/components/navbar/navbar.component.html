@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" routerLink="" href="#">Auction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">
+          <a class="nav-link" routerLink="" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller" href="#">Seller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="bidder" href="#">Bidder</a>
+        </li>
+
+        <button mat-raised-button color="warn" (click)="onLogOutBtn()">Log Out</button>
+      </ul>
+    </div>
+  </nav>

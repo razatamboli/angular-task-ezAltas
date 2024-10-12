@@ -1,0 +1,17 @@
+<div class="card my-4">
+    <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onLoginForm()">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" formControlName="loginemail" id="email" type="text" placeholder="Enter Valid Email ID">
+            </div>
+            <div class="form-group">
+                <label for="id">Password</label>
+                <input class="form-control" formControlName="loginpassword" id="id" type="password" placeholder="Enter Password">
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-login">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

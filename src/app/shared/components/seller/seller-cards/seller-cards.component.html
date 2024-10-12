@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 mb-4" *ngFor="let seller of sellerArr">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>{{seller.itemName}}</h2>
+                </div>
+                <div class="card-body">
+                    <p class="text-center">Description : {{seller.description}}</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    Starting Price : {{seller.startingBid | currency : "USD"}}
+                    <div>Bidding Price <div class="d-flex justify-content-between align-items-center"> <i class="fa-solid fa-square-plus fa-2x" (click)="onIncreamentBid(seller)"></i> {{seller.startingBid}} <i class="fa-regular fa-square-minus fa-2x" (click)="onDecreamentBid(seller)"></i></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
